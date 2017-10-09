@@ -70,6 +70,6 @@ angular.module('typingCarousel', [])
 						
 					},
 						template:
-						'<h1>{{startSentence}} <span class="txt-rotate"></span> {{endSentence}}</h1>',
+						'<h2>{{startSentence}} <span class="txt-rotate"></span> {{endSentence}}</h2>',
 				}
 		})
