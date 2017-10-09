@@ -3,6 +3,10 @@ angular.module('typingCarousel', [])
 		.directive('typingCarousel', function () {
 			   return {
 					restrict: 'E',
+					scope: {
+						startSentence: '@',
+						endSentence: '@'
+					},
 					link: function (scope, elm, attrs, ctrl) {
 						var words = scope.$eval(attrs.words);
 						var period = scope.$eval(attrs.period);
@@ -66,6 +70,6 @@ angular.module('typingCarousel', [])
 						
 					},
 						template:
-						'<h1>This pen is <span class="txt-rotate"></span></h1>',
+						'<h1>{{startSentence}} <span class="txt-rotate"></span> {{endSentence}}</h1>',
 				}
 		})
