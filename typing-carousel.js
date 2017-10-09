@@ -51,7 +51,6 @@ angular.module('typingCarousel', [])
 							  }, delta);
 							};
 
-							window.onload = function() {
 								var elements = document.getElementsByClassName('txt-rotate');
 							  for (var i=0; i< words.length; i++) {
 								if (words) {
@@ -63,7 +62,7 @@ angular.module('typingCarousel', [])
 							  css.type = "text/css";
 							  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
 							  document.body.appendChild(css);
-							};
+							
 						
 					},
 						template:
